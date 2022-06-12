@@ -14,7 +14,7 @@ class Team{
     int totalScore;
     public:
     Team();
-    Team(string name, double skillLevel);
+    Team(string name);
     void setName(string name){
         this->name = name;
     }

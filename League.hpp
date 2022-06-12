@@ -12,4 +12,9 @@ class League{
     void createLeague();
     void createLeagueCombined(vector<Team> teams);
     void representLeague();
+
+    vector<Team> getTeams(){
+        return this->teams;
+    }
+
 };

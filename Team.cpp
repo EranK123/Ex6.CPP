@@ -3,9 +3,11 @@
 #include "Team.hpp"
 using namespace std;
 
-Team::Team(string name, double skillLevel){
+Team::Team(){}
+
+Team::Team(string name){
     this->name = name;
-    this->skillLevel = skillLevel;
+    this->skillLevel = 0;
     this->wins = 0;
     this->loses = 0;
     this->winLossBalance = 0;
