@@ -6,7 +6,7 @@ using namespace std;
 class Team{
     private:
     string name;
-    double skillLevel;
+    float skillLevel;
     int wins;
     int loses;
     int winLossBalance;
@@ -15,6 +15,7 @@ class Team{
     public:
     Team();
     Team(string name);
+    float setSkillLevel();
     void setName(string name){
         this->name = name;
     }
@@ -26,4 +27,9 @@ class Team{
     int getTotalScore(){
         return this->totalScore;
     }
+
+    float getSkillLevel(){
+        return this->skillLevel;
+    }
+
 };

@@ -11,11 +11,25 @@ Game::Game(Team home, Team away){
 }
 
 Team Game::winner(){
-    if(this->homeScore > this->awayScore){
+    int random = 50 + (rand() % 51);
+    int n = rand() % 2;
+    if(n == 1){
+        this->homeScore += random;
         return this->home;
-    }else if(this->homeScore < this->awayScore){
-        return this->away;
     }else{
+        this->awayScore += random;
         return this->away;
     }
 }
+
+
+// Team Game::winner(){
+//     if(this->homeScore > this->awayScore){
+//         return this->home;
+//     }else if(this->homeScore < this->awayScore){
+//         return this->away;
+//     }else{
+//         return this->away;
+//     }
+// }
+

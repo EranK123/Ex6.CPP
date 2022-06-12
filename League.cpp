@@ -18,7 +18,7 @@ void League::createLeague(){
     srand(time(0));
     for(int i = 0; i < 20; i++){
         name = "Team: " +  to_string((rand() % 1000)); 
-        this->teams.push_back(Team(name, 0));
+        this->teams.push_back(Team(name));
     }
 }
 
@@ -29,7 +29,11 @@ void League::representLeague(){
 }
 
 int main(){
-    League l;
-    l.createLeague();
-    l.representLeague();
+    // League l;
+    // l.createLeague();
+    // l.representLeague();
+    for(int i = 0; i < 5; i++){
+    int random = 50 + (rand() % 51);
+    cout << random << endl;
+    }
 }

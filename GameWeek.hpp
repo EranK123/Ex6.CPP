@@ -6,7 +6,7 @@ using namespace std;
 class GameWeek{
     private:
     vector<Game> week;
-    int weekNum;
     public:
-    GameWeek(vector<Game> week, int weekNum);
+    GameWeek();
+    void setWeek(vector<Game> week);
 };

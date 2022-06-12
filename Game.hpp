@@ -11,6 +11,7 @@ class Game{
     int awayScore;
     public:
     Game(Team home, Team away);
+    void play();
     Team winner();
     int getHomeScore(){
         return this->homeScore;
